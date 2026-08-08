@@ -7,16 +7,41 @@
     
     <style>
         body {
-           background-image: url('Background1.png');
-	   background-repeat: no-repeat;
-	   background-position: center center;
-	   background-attachment: fixed;
-	   background-size: cover;
+            background-image: url('Background1.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
             color: #cccccc;            
             font-family: 'Courier New', Courier, monospace; 
             text-align: center;        
             padding: 50px 20px;
             margin: 0;
+        }
+
+        .secret-nav {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            z-index: 9999;
+        }
+
+        .secret-nav a {
+            color: #01e2a2;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 2px;
+            display: inline-block;
+            text-shadow: 0 0 10px #01e2a2, 0 0 20px #01e2a2, 0 0 30px #01e2a2;
+            transition: all 0.3s ease;
+        }
+
+        .secret-nav a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #01e2a2, 0 0 40px #01e2a2, 0 0 60px #01e2a2;
+            transform: scale(1.05);
         }
 
         h1 {
@@ -66,10 +91,13 @@
             color: #000000;            
             box-shadow: 0 0 10px #01e2a2, 0 0 30px #01e2a2, 0 0 50px #01e2a2; 
         }
-
     </style>
 </head>
 <body>
+
+    <div class="secret-nav">
+        <a href="devlog.html">[ LOGS ]</a>
+    </div>
 
     <img src="MorrallGamesLogo.png" alt="My Game Studio Logo" style="max-width: 100%; height: auto; margin-bottom: 20px;">
     <p>Welcome! Below you will find my current projects and active teasers.</p>
@@ -94,9 +122,9 @@
         <a href="https://www.mediafire.com/file/m1uxneo2dx5v5lg/ourmechanicalfamilydemo2.exe/file" class="download-btn">DOWNLOAD DEMO</a>
     </div>
 
-<footer>
-    <p>© (2026) Morrall Games. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>© (2026) Morrall Games. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
