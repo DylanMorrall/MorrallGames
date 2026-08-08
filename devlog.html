@@ -7,7 +7,8 @@
     
     <style>
         * {
-            box-sizing: border-box;         }
+            box-sizing: border-box;
+        }
 
         body {
             background-image: url('Background1.png');
@@ -21,6 +22,14 @@
             margin: 0 auto;
             padding: 50px 20px;
             text-align: center;
+        }
+
+        /* Fixed: Responsive and centered Dev Log Logo */
+        .heading-image {
+            max-width: 100%; /* Important: Can shrink, but not stretch */
+            height: auto; /* Maintains aspect ratio */
+            display: block; /* Required for margin auto */
+            margin: 0 auto 30px auto; /* Centered, with 30px bottom margin */
         }
 
         .back-btn,
@@ -47,12 +56,7 @@
             transform: scale(1.05);
         }
 
-        h1 {
-            color: #ffffff;
-            border-bottom: 1px solid #222222;
-            padding-bottom: 15px;
-            letter-spacing: 2px;
-        }
+        /* h1 rule removed (replaced by .heading-image) */
 
         .log-entry {
             background-color: #0a0a0a;
@@ -81,7 +85,8 @@
         }
 
         .log-image {
-            width: 100%;                         max-width: 100%;        
+            width: 100%;
+            max-width: 100%;        
             height: auto;            
             border: 2px solid #222222; 
             margin: 15px auto 0 auto;
@@ -93,6 +98,7 @@
 
     <a href="index.html" class="back-btn">← MAIN SITE</a>
 
+    <!-- This is the logo image we are fixing -->
     <img src="DevelopmeLogsLoggo.png" alt="Development Logs" class="heading-image">
 
     <div class="log-entry">
